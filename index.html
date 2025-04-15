@@ -1,0 +1,262 @@
+<html>
+<head>
+  <title>Koduru Deekshitha - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 1.5s ease-in;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-2px);
+    }
+
+    h1, h2, h3 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #0077b6;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #023e8a;
+    }
+
+    section {
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease, border-left 0.3s ease;
+      border-left: 5px solid transparent;
+      padding-left: 10px;
+    }
+
+    .section-title {
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 22px;
+      transform: translateX(-20px);
+      opacity: 0;
+      transition: all 0.8s ease-out;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    .contact a {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .visible {
+      opacity: 1 !important;
+      transform: translateY(0px) !important;
+      border-left: 5px solid #0077b6 !important;
+    }
+
+    .section-title.visible {
+      transform: translateX(0px) !important;
+      opacity: 1 !important;
+    }
+
+    .typing {
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: #555;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #0077b6;
+      width: 0;
+      animation: typing 3s steps(40, end), blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .button {
+      background-color: #0077b6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      background-color: #005f86;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Koduru Deekshitha</h1>
+      <p class="typing">Computer Science Student | Web Developer | Cloud Enthusiast</p>
+    </header>
+
+    <section class="contact">
+      <h2 class="section-title">Contact</h2>
+      <a href="mailto:kodurudeekshitha05@gmail.com">📧 kodurudeekshitha05@gmail.com</a>
+      <p>📍 Visakhapatnam</p>
+      <a href="https://www.linkedin.com/in/koduru-deekshitha-3037032a7" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/KoduruDeekshitha" target="_blank">💻 GitHub</a>
+      <p>📞 +91-9959850058</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Profile</h2>
+      <p>A third-year BTech Computer Science student specializing in software development and web technologies. An enthusiastic problem-solver with hands-on experience in real-world projects, committed to producing top-notch solutions and expanding industry expertise.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>Data Structures & Algorithms</li>
+        <li>Web Development</li>
+        <li>Problem Solving</li>
+        <li>Strong Analytical Skills</li>
+        <li>AWS Basics (S3, EC2, VPC)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Projects</h2>
+      <ul>
+        <li><a href="#">Know the Unknown Website (Team Project)</a> – Developed a website to share scientific updates.</li>
+        <li><a href="#">Microservo Robotic Arm (Team Project)</a> – Built a servo motor-controlled robotic arm.</li>
+        <li><a href="#">Networks (Web Development Project)</a> – A 5-level interactive web app covering computer networks topics like port numbers, subnetting, and more. Built using HTML, CSS, JavaScript for the frontend, and Express with MongoDB for the backend.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+      <p><strong>Cloud Computing Intern (AWS)</strong> – Online Internship</p>
+      <p><em>May 5 – May 9, 2024</em></p>
+      <p>Nielit Virtual Academy | Trained in deploying websites using AWS S3, EC2, and VPC.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Volunteer Experience</h2>
+      <p><strong>Volunteer Event Organizer</strong> – SOAR Group (SOAR-SEEK OPPORTUNITIES AND RISE)</p>
+      <p>📅 Event Date: May 3, 2024 | 📍 Venue: Anits College</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Certificates</h2>
+      <ul>
+        <li>Design Thinking Workshop Certificate</li>
+        <li>Project Expo Certificate</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Anil Neerukonda Institute of Technology and Sciences</h3>
+          <p>BTech, Computer Science (2022–2026)</p>
+          <p><strong>GPA:</strong> 8.9/10</p>
+        </div>
+        <div>
+          <h3>Sri Viswa (2020–2022)</h3>
+          <p>Intermediate (SSC)</p>
+          <p><strong>Score:</strong> 92.3%</p>
+        </div>
+        <div>
+          <h3>De Paul School (2019–2020)</h3>
+          <p>10th (ICSE)</p>
+          <p><strong>Score:</strong> 92%</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Languages</h2>
+      <ul>
+        <li>English (Fluent)</li>
+        <li>Telugu (Native)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Hobbies</h2>
+      <ul>
+        <li>Classical Dance</li>
+        <li>Listening to Music</li>
+        <li>Travelling</li>
+        <li>Sports</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    // Fade in on load
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '1';
+    });
+
+    // Reveal sections & headers on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, .section-title').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
